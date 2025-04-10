@@ -39,7 +39,7 @@ export const CustomNavbar = () =>{
 
     return <div className="bg-green-500 h-12 p-3 flex justify-between px-20 items-center mb-3">
         <div className="text-sm lg:text-xl font-semibold">
-            Work Manager
+            Task Manager
         </div>
         <div className="hidden lg:flex gap-8">
           {context.user && (
