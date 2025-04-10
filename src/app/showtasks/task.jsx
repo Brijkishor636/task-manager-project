@@ -28,7 +28,7 @@ export default function Task({task, deleteTaskParent}){
                             confirmButtonText: "Yes, delete it!"
                           }).then((result) => {
                             if (result.isConfirmed) {
-                                deleteTask(task._id);
+                                deleteTask(task?._id);
                             }
                           });
                     }} className="bg-gray-950 hover:bg-gray-900 w-6 h-6 rounded-full flex justify-center items-center cursor-pointer">
