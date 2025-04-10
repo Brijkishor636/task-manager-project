@@ -8,7 +8,7 @@ export async function POST(request){
     })
 
     response.cookies.set("loginToken", "", {
-        expiresIn: new Date(0),
+        expires: new Date(0),
     })
 
     return response;

@@ -45,7 +45,7 @@ export async function POST(request){
         }, {status: 200});
 
         response.cookies.set("loginToken", token, {
-            expiresIn: "1d",
+            expires: "1d",
             httpOnly: true,
         })
 
