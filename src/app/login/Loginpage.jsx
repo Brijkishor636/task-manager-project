@@ -42,7 +42,7 @@ export const LoginComponent = () =>{
                 position: "top-center"
             })
             // console.log(response.data);
-            router.push("/profile/user");
+            router.push("/");
 
         } catch (error) {
             console.log(error);
