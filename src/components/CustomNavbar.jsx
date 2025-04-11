@@ -1,7 +1,7 @@
 "use client"
 
 import UserContext from "@/context/userContext";
-import { dbConnection } from "@/helper/db";
+// import { dbConnection } from "@/helper/db";
 import axios from "axios";
 import Link from "next/link"
 import { useRouter } from "next/navigation";
@@ -23,7 +23,7 @@ export const CustomNavbar = () =>{
     async function doLogout(){
 
       try {
-        const result = await axios.post("http://localhost:3000/api/logout");
+        const result = await axios.post("https://abc123.ngrok.io/api/logout");
         // console.log(result);
         context.setUser(undefined);
         router.push("/");

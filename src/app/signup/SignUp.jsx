@@ -47,7 +47,7 @@ export default function SignUpComponent(){
 
         try{
 
-            response = await axios.post("http://localhost:3000/api/users", data)
+            response = await axios.post("https://abc123.ngrok.io/api/users", data)
 
             toast.success(response.data.msg, {
                 position: "top-center"

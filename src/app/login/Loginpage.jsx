@@ -36,7 +36,7 @@ export const LoginComponent = () =>{
                 })
             }
     
-            response = await axios.post("http://localhost:3000/api/login", loginData);
+            response = await axios.post("https://abc123.ngrok.io/api/login", loginData);
             context.setUser(response.data.user);
             toast.success(response.data.msg, {
                 position: "top-center"

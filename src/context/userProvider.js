@@ -12,7 +12,7 @@ export default function UserProvider({children}){
 
         async function done(){
         try {
-            const newUser = await axios.get("http://localhost:3000/api/current");
+            const newUser = await axios.get("https://abc123.ngrok.io/api/current");
             // console.log(newUser);
             setUser({...newUser});
         } catch (error) {
