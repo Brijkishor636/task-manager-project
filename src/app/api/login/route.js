@@ -24,6 +24,7 @@ export async function POST(request){
         }
 
         const verifiedPassword = await bcrypt.compare(password, user.password);
+        
 
         if(!verifiedPassword){
             return NextResponse.json({
@@ -45,7 +46,7 @@ export async function POST(request){
         }, {status: 200});
 
         response.cookies.set("loginToken", token, {
-            expires: "1d",
+            expiresIn: "1d",
             httpOnly: true,
         })
 

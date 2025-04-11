@@ -18,7 +18,7 @@ export default function AddTaskComponent(){
         e.preventDefault();
 
         try{
-            const response = await axios.post("https://abc123.ngrok.io/api/tasks",{
+            const response = await axios.post("/api/tasks",{
                 title: task.title,
                 content: task.content,
                 status: task.status,

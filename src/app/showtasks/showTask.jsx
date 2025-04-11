@@ -15,7 +15,7 @@ export default function ShowTask(){
     // console.log(userId);
 
     async function loadTasks(userId){
-        const task = await axios.get(`https://abc123.ngrok.io/api/users/${userId}/tasks`);
+        const task = await axios.get(`/api/users/${userId}/tasks`);
         // console.log(task);
         setTasks([...task.data].reverse());
     }
@@ -29,7 +29,7 @@ export default function ShowTask(){
     async function deleteTaskParent(taskId){
         
         try {
-            const result = await axios.delete(`https://abc123.ngrok.io/api/tasks/${taskId}`)
+            const result = await axios.delete(`/api/tasks/${taskId}`)
             console.log(result);
             const newTask = tasks.filter(item => item._id!=taskId);
             setTasks(newTask);

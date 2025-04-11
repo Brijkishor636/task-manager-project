@@ -23,7 +23,7 @@ export const CustomNavbar = () =>{
     async function doLogout(){
 
       try {
-        const result = await axios.post("https://abc123.ngrok.io/api/logout");
+        const result = await axios.post("/api/logout");
         // console.log(result);
         context.setUser(undefined);
         router.push("/");
