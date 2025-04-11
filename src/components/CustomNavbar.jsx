@@ -37,16 +37,16 @@ export const CustomNavbar = () =>{
     
     // console.log(context.user);
 
-    return <div className="bg-green-500 h-12 p-3 flex justify-between px-20 items-center mb-3">
+    return <div className="bg-blue-500 h-12 p-3 flex justify-between px-20 items-center">
         <div className="text-sm lg:text-xl font-semibold">
             Task Manager
         </div>
         <div className="hidden lg:flex gap-8">
           {context.user && (
               <>
-                <Link href={"/"} className="hover:text-green-300 cursor-pointer">Home</Link>
-                <Link href={"/addtask"} className="hover:text-green-300 cursor-pointer">Add Task</Link>
-                <Link href={"/showtasks"} className="hover:text-green-300 cursor-pointer">Show Tasks</Link>
+                <Link href={"/"} className="hover:text-blue-300 cursor-pointer">Home</Link>
+                <Link href={"/addtask"} className="hover:text-blue-300 cursor-pointer">Add Task</Link>
+                <Link href={"/showtasks"} className="hover:text-blue-300 cursor-pointer">Show Tasks</Link>
               </>
             )
           }
@@ -55,15 +55,15 @@ export const CustomNavbar = () =>{
         <div className="hidden lg:flex gap-x-5">
             {context.user && (
                 <>
-                  <Link href={"#!"} className="hover:text-green-300">{context.user.data?.name}</Link>
-                  <button onClick={doLogout} className="ml-5 hover:text-green-300">Logout</button>
+                  <Link href={"#!"} className="hover:text-blue-300">{context.user.data?.name}</Link>
+                  <button onClick={doLogout} className="ml-5 hover:text-blue-300">Logout</button>
                 </>
             )}
 
             {!context.user && (
                 <>
-                <Link href={"/login"} className="hover:text-green-300">Login</Link>
-                <Link href={"/signup"} className="ml-5 hover:text-green-300">SignUp</Link>
+                <Link href={"/login"} className="hover:text-blue-300">Login</Link>
+                <Link href={"/signup"} className="ml-5 hover:text-blue-300">SignUp</Link>
               </>
             )} 
             

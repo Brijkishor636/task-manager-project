@@ -81,7 +81,7 @@ export default function SignUpComponent(){
     }
 
 
-    return <div className="grid grid-cols-12 py-4">
+    return <div className="grid grid-cols-12 py-4 mt-3 mb-3">
         <div className="col-span-8 col-start-3 rounded-xl bg-gradient-to-tr from-blue-400 to-gray-300 sm:col-span-6 sm:col-start-4 md:col-span-4 md:col-start-5 py-6 px-5">
             <div className="flex items-center justify-center">
                 <h1 className="text-2xl font-semibold">SignUp Here</h1>

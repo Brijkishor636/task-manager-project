@@ -58,8 +58,8 @@ export default function AddTaskComponent(){
         })
       };
 
-    return <div className="grid grid-cols-12 justify-center">
-        <div className="col-span-10 col-start-2 p-3 md:col-span-8 md:col-start-3 lg:col-span-4 lg:col-start-5 bg-gradient-to-tr from-orange-300 to-green-300 rounded-xl px-5 pb-5">
+    return <div className="grid grid-cols-12 justify-center mt-3 mb-3">
+        <div className="col-span-10 col-start-2 p-3 md:col-span-8 md:col-start-3 lg:col-span-4 lg:col-start-5 bg-gradient-to-tr from-blue-300 to-green-400 rounded-xl px-5 pb-5">
 
             <div className="mb-8 mt-4 flex justify-center">
                 <Image src={loginSvg} 

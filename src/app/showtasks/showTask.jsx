@@ -47,12 +47,12 @@ export default function ShowTask(){
     }
 
     // console.log(tasks);
-    return (<div className="grid grid-cols-12">
-        <div className="col-span-6 col-start-4">
+    return (<div className="grid grid-cols-12 mt-3 mb-3">
+        <div className="col-span-10 col-start-2 md:col-span-6 md:col-start-4">
             <h1 className="text-xl font-semibold">Your Tasks ( {tasks.length} )</h1>
 
             {tasks.map((task)=>(
-                <Task task={task} key={task._id} deleteTaskParent={deleteTaskParent}/>
+                <Task task={task} key={task?._id} deleteTaskParent={deleteTaskParent}/>
             ))}
         </div>
     </div>)
